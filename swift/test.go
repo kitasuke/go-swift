@@ -1,7 +1,6 @@
 package swift
 
 import (
-	"fmt"
 	"os"
 	"os/exec"
 
@@ -79,7 +78,8 @@ func (c *TestCommandModel) Run() error {
 }
 
 func (c *TestCommandModel) cmdSlice() []string {
-	slice := []string{fmt.Sprintf("%s %s", toolName, "test")}
+	slice := []string{toolName}
+	slice = append(slice, "test")
 
 	if c.buildPath != "" {
 		slice = append(slice, "--build-path", c.buildPath)
