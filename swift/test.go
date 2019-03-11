@@ -11,8 +11,8 @@ import (
 swift test \
 	[--build-path <buildPath>] \
 	[--configuration <configuration>] \
-	[--skip-build <skipBuild>] \
-	[--parallel <parallel>] \
+	[--skip-build] \
+	[--parallel] \
 */
 
 // TestCommandModel ...
