@@ -57,7 +57,8 @@ func (c *BuildCommandModel) PrintableCmd() string {
 
 // Command ...
 func (c *BuildCommandModel) Command() *command.Model {
-	panic("implement me")
+	cmdSlice := c.cmdSlice()
+	return command.New(cmdSlice[0], cmdSlice[1:]...)
 }
 
 // Cmd ...
