@@ -27,7 +27,7 @@ type BuildCommandModel struct {
 }
 
 // NewBuildCommand ...
-func NewBulidCommand() *BuildCommandModel {
+func NewBuildCommand() *BuildCommandModel {
 	return &BuildCommandModel{}
 }
 
