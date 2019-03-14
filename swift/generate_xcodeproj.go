@@ -76,7 +76,8 @@ func (c *GenerateXcodeprojCommandModel) Run() error {
 
 func (c *GenerateXcodeprojCommandModel) cmdSlice() []string {
 	slice := []string{toolName}
-	slice = append(slice, "package generate-xcodeproj")
+	slice = append(slice, "package")
+	slice = append(slice, "generate-xcodeproj")
 
 	if c.output != "" {
 		slice = append(slice, "--output", c.output)
